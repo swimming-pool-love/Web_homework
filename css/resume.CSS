@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.resume_header{
+    width: 100%;
+    height: 22vh;
+    overflow: hidden;
+    background-image: url(../images/forest2.jpg);
+    background-position: center center;
+}
+.rusume_container {
+    width: 100%;
+    height: 1400px;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rusume_container .content {
+    width: 1020px;
+    height: 1300px;
+    background: white;
+    box-shadow: -10px 10px 8px gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rusume_container .content .left {
+    width: 300px;
+    height: 1200px;
+    border-right: 2px solid gray;
+}
+.rusume_container .content .left .top {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rusume_container .content .left .top .img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 100px;
+}
+.rusume_container .content .left .top .img > img {
+    width: 100%;
+}
+.rusume_container .content .left .top .name {
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px;
+}
+.rusume_container .content .left .top .school {
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+.rusume_container .content .left .center {
+    width: 100%;
+    height: 250px;
+    background: #473C8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rusume_container .content .left .center .data {
+    width: 80%;
+    height: 200px;
+}
+.rusume_container .content .left .center .data .personal_data {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+.rusume_container .content .left .center .data .item {
+    width: 100%;
+    height: 30px;
+    line-height: 25px;
+    color: white;
+}
+.rusume_container .content .left .bottom {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.rusume_container .content .left .bottom .boxes {
+    width: 90%;
+    height: 700px;
+    margin-top: 30px;
+    margin-left: 42px;
+}
+.rusume_container .content .left .bottom .boxes .box1 {
+    width: 100%;
+    height: 130px;
+}
+.rusume_container .content .left .bottom .boxes .box1 .contact {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.rusume_container .content .left .bottom .boxes .box1 .item {
+    color: #080808;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+}
+.rusume_container .content .left .bottom .boxes .box2 {
+    width: 100%;
+    height: 230px;
+}
+.rusume_container .content .left .bottom .boxes .box2 .skill {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.rusume_container .content .left .bottom .boxes .box2 .software {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.rusume_container .content .left .bottom .boxes .box2 .td1 {
+    color: #080808;
+    width: 81px;
+}
+.rusume_container .content .left .bottom .boxes .box2 .td2 {
+    width: 140px;
+    height: 30px;
+}
+.rusume_container .content .left .bottom .boxes .box2 .td2 .container {
+    width: 140px;
+    background-color: #ccc;/* 进度条颜色 */
+    height: 10px;
+}
+.rusume_container .content .left .bottom .boxes .box2 .td2 .container .skills_1 {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 10px;
+    color: paleturquoise;
+    width: 75%;
+    font-size: 12px;
+    background-color: paleturquoise;
+}
+.rusume_container .content .left .bottom .boxes .box2 .td2 .container .skills_2 {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 10px;
+    color: pink;
+    width: 90%;
+    font-size: 12px;
+    background-color: pink;
+}
+.rusume_container .content .left .bottom .boxes .box2 .td2 .container .skills_3 {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 10px;
+    color: palegreen;
+    width: 85%;
+    font-size: 12px;
+    background-color: palegreen;
+}
+.rusume_container .content .left .bottom .boxes .box2 .td2 .container .skills_4 {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 10px;
+    color: plum;
+    width: 75%;
+    font-size: 12px;
+    background-color: plum;
+}
+.rusume_container .content .left .bottom .boxes .box3 {
+    width: 100%;
+    height: 230px;
+}
+.rusume_container .content .left .bottom .boxes .box3 .lang {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.rusume_container .content .left .bottom .boxes .box3 .td1 {
+    color: #818181;
+    width: 80px;
+}
+.rusume_container .content .left .bottom .boxes .box3 .td2 {
+    width: 140px;
+    height: 30px;
+}
+.rusume_container .content .left .bottom .boxes .box3 .td2 .container {
+    width: 140px;
+    background-color: #ccc; /* 进度条背景色 */
+    height: 10px;
+}
+.rusume_container .content .left .bottom .boxes .box3 .td2 .container .skills_1 {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 10px;
+    color: pink;
+    width: 80%;
+    font-size: 12px;
+    background-color: pink;
+}
+.rusume_container .content .left .bottom .boxes .box3 .td2 .container .skills_2 {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 10px;
+    color: greenyellow;
+    width: 70%;
+    font-size: 12px;
+    background-color: greenyellow;
+}
+.rusume_container .content .left .bottom .boxes .box3 .td2 .container .skills_3 {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 10px;
+    color: khaki;
+    width: 45%;
+    font-size: 12px;
+    background-color: khaki;
+}
+.rusume_container .content .right {
+    width: 680px;
+    height: 1200px;
+    display: flex;
+}
+.rusume_container .content .right .right_neirong {
+    width: 625px;
+    height: 1200px;
+}
+.rusume_container .content .right .right_neirong .box1 {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    border: 3px solid transparent;
+    border-bottom: 3px solid black;
+}
+.rusume_container .content .right .right_neirong .box1 h2 {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+}
+.rusume_container .content .right .right_neirong .box1 div {
+    color: #737373;
+    width: 100%;
+    height: 150px;
+    line-height: 30px;
+}
+.rusume_container .content .right .right_neirong .box2 {
+    width: 100%;
+    height: 320px;
+    border: 3px solid transparent;
+    border-bottom: 3px solid black;
+}
+.rusume_container .content .right .right_neirong .box2 .tr1 {
+    height: 50px;
+}
+.rusume_container .content .right .right_neirong .box2 .tr1 h2 {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+}
+.rusume_container .content .right .right_neirong .box2 .td1 {
+    width: 150px;
+}
+.rusume_container .content .right .right_neirong .box2 .tr2 {
+    height: 20px;
+}
+.rusume_container .content .right .right_neirong .box2 .tr2 .td2 {
+    font-weight: bold;
+}
+.rusume_container .content .right .right_neirong .box2 .tr3 {
+    color: #737373;
+    height: 60px;
+    vertical-align: text-top;
+}
+.rusume_container .content .right .right_neirong .box2 .tr3 .td3 {
+    color: black;
+    font-weight: bold;
+}
+.rusume_container .content .right .right_neirong .box3 {
+    width: 100%;
+    height: 430px;
+    border: 3px solid transparent;
+    border-bottom: 3px solid black;
+}
+.rusume_container .content .right .right_neirong .box3 .tr1 {
+    height: 50px;
+}
+.rusume_container .content .right .right_neirong .box3 .tr1 h2 {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+}
+.rusume_container .content .right .right_neirong .box3 .td1 {
+    width: 150px;
+}
+.rusume_container .content .right .right_neirong .box3 .td3 {
+    height: 20px;
+    font-weight: bold;
+}
+.rusume_container .content .right .right_neirong .box3 .tr3 {
+    height: 70px;
+    color: #737373;
+    vertical-align: text-top;
+}
+.rusume_container .content .right .right_neirong .box3 .tr3 .td2 {
+    color: black;
+    font-weight: bold;
+}
+.rusume_container .content .right .right_neirong .box4 {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.rusume_container .content .right .right_neirong .box4 h2 {
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+}
+.rusume_container .content .right .right_neirong .box4 .foot {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.rusume_container .content .right .right_neirong .box4 .foot .one {
+    width: 300px;
+    height: 180px;
+    text-align: center;
+}
+.rusume_container .content .right .right_neirong .box4 .foot .one .title {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.rusume_container .content .right .right_neirong .box4 .foot .one .text {
+    color: #737373;
+}
+.footer {
+    /*底部信息*/
+    background-color: #ccc;
+    position: relative;
+    height:30px;
+}
+.footer .copyright{
+    text-align: center;
+}
+
+
+
+
+  

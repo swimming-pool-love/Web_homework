@@ -1,0 +1,202 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*由于页眉图片过长，设置body宽为视窗宽度，超过溢出*/
+    overflow-x: hidden;
+    background-color: whitesmoke;
+}
+header{
+    position: relative;
+    height: 100px;
+    background-color: whitesmoke;
+}
+header img{
+    position: absolute;
+    left: 15%;
+    top: 5%; 
+}
+.starset_1{
+    position: absolute;
+    background-image: url(../images/star01.png);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+    animation: starset_1 55s linear infinite;
+    transform: translate3d(0, 0, 0);
+}
+.starset_2{
+    position: absolute;
+    background-image: url(../images/star02.png);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+    animation: starset_2 50s linear infinite;
+    transform: translate3d(0, 0, 0);
+}
+@keyframes starset_1{
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+@keyframes starset_2{
+    0% {
+        left: 0
+    }
+    100% {
+        left: -200%
+    }
+}
+/* 主容器部分 */
+.main_session{
+    /*主容器采用flex布局*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+/* 大学生活印记照片区域*/
+.college_life_photo_container{
+    height: 330px;
+    width: 80%; 
+    display: flex;  /* 采用flex布局 */
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    margin:auto;
+    margin-top:1.8em;
+}
+.qcontainer{
+    perspective:400;
+    width:220px;
+    margin-right:20px;
+}
+.photo{
+    width:100%;
+    height:280px;
+    transform-style:preserve-3d;
+    transition:1.5s;
+}
+/* qcontainer的伪类，当鼠标触碰该div时，div沿y轴翻转 */
+.qcontainer:hover .photo{
+    transform:rotateY(180deg);
+}
+
+.face{
+    position:absolute;
+    backface-visibility:hidden; /* 隐藏被旋转的 div 元素的背面 */
+}
+
+.back{
+    transform:rotateY(180deg);
+    background:linear-gradient(#7f7fd5,#86a8e7,#91eae4); /* 调背景的线性渐变色 */
+    width:220px;
+    height:300px;
+}
+.back h3{
+    color:white;
+    text-align:center;
+}
+
+/*大学生活博客容器*/
+.college_life_blog_container{
+     margin-top: 15px;
+     height: 250px;
+     width: 80%;
+     display: flex;  /* 采用flex布局 */
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: row;    
+}
+/* 大学生活博客卡片区 */
+.college_life_blog_container .college_life_card{
+    position: relative;  /* 卡片div采用绝对定位，“子绝父相” */
+    display: flex;      /* 卡片div采用flex布局 */
+    align-items: flex-end;
+    height: 100%;
+    width: 20%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+        -0.7px -0.7px 2.5px rgba(0, 0, 0, 0.02),
+        -0.2px -0.2px 6.1px rgba(0, 0, 0, 0.026),
+        2.5px 2.5px 11.4px rgba(0, 0, 0, 0.03),
+        9.3px 9.4px 20.3px rgba(0, 0, 0, 0.034);
+    max-height: 250px; 
+    min-height: 250px;
+    overflow: hidden;
+    background-color:white;
+}
+ /* 伪类，鼠标悬停事件，当事件触发，修改边框 box-shadow属性。 */
+.college_life_card:hover{ 
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+.college_life_card .college_life_card_info {
+    background-color: #fff; 
+    position: absolute; 
+    width: 100%; 
+    top: 0; 
+    left: 0; 
+    text-align: center;
+    height: 50px; 
+    transition: 0.4s; 
+    z-index: 2;
+}
+.college_life_card .college_life_card_info button{
+    height: 30px;
+    border-radius: 30px;
+    color: white;
+    border: #9796f0;
+    background-image: linear-gradient(to bottom right, #9796f0, #fbc7d4);
+    text-align: center;
+}
+.college_life_card .college_life_card_img{
+    float: left; 
+    width: 100%; 
+    position: relative; 
+    transition: 0.4s; 
+    z-index: 4; 
+    overflow: hidden;
+}
+.college_life_card .college_life_card_img img{
+    width: 100%;
+}
+.college_life_card:hover .college_life_card_info{
+    height: 180px; 
+    transition: 0.3s; 
+    z-index: 6; 
+    border-radius: 0 0 50% 50%; 
+    overflow: hidden;
+}
+.college_life_card:hover .college_life_card_img{
+    margin-top: 100px; 
+    transition: 0.3s; 
+    border-radius: 0;
+}
+/* 页脚区域 */
+.footer {
+    /*底部信息*/
+    background-color: whitesmoke;
+    position: relative;
+    height:30px;
+}
+.footer .copyright{
+    text-align: center;
+}
+
+
+
+
+
+
+
+

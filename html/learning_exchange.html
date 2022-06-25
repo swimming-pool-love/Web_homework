@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/learning_exchange.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <title>学习交流圈</title>
+</head>
+<body>
+    <!-- 页眉区 -->
+    <header class="learning_header"></header>
+    <!-- 导航区 -->
+    <nav>
+        <a href="./college_life.html"><img src="../images/logo.png" alt="logo"class="logo"></a>
+        <div class="nav-bar">
+            <a class="nav-item" href="./college_life.html">
+                <img src="../images/home.png" alt="home" class="icons">
+                <span>大学生活</span>
+            </a>
+            <a class="nav-item" href="./resume.html">
+                <img src="../images/resume.png" alt="resume" class="icons">
+                <span>简历作品</span>
+            </a>
+            <a class="nav-item" href="./college_life_blog.html">
+                <img src="../images/hobby.png" alt="blog" class="icons">
+                <span>生活记录</span>
+            </a>
+            <a class="nav-item" id="nav-item-active" nav-item href="./learning_exchange.html">
+                <img src="../images/study.png" alt="learningExchange" class="icons">
+                <span>学习交流圈</span>
+            </a>
+        </div>
+    </nav>
+    <!-- 主干区 -->
+    <section class="main_section">
+        <!-- 文章分享区 -->
+        <div class="communuitymiddle">
+            <div class="newlistcom">
+                <div class="aicn">
+                    <div class="newlist">
+                        <ul>
+                            <a href="https://www.huaweicloud.com/zhishi/edits-15756137.html"><img src="../images/bigData.png" alt="大数据"/></a>
+                            <p>什么是大数据技术？</p>
+                            <p>大数据应用有哪些？</p>
+                            <p style="color: #8C8C8C; font-size: 80%;">来自：华为云&nbsp;&nbsp;发布时间 : 2021-11-05&nbsp;&nbsp;浏览量：2545次</p>
+                        </ul>
+                    </div>
+                </div>   
+                <div class="aicn">
+                    <div class="newlist">
+                        <ul>
+                            <a href="https://zhuanlan.zhihu.com/p/232009119"><img src="../images/云计算.png" alt="云计算" /></a>
+                            <p>云计算的服务模式有哪些？</p>
+                            <p>云计算的核心优势有？</p>
+                            <p style="color: #8C8C8C; font-size: 80%;">来自：知乎&nbsp;&nbsp;发布时间 : 2020-09-10&nbsp;&nbsp;浏览量：1872次</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="aicn">
+                    <div class="newlist">
+                        <ul>
+                            <a href="https://zhuanlan.zhihu.com/p/203037669"><img src="../images/物联网.png" alt="物联网" /></a>
+                            <p>物联网到底有多大？</p>
+                            <p>物联网的发展现状与发展趋势？</p>
+                            <p style="color: #8C8C8C; font-size: 80%;">来自：知乎&nbsp;&nbsp;发布时间 : 2020-08-28&nbsp;&nbsp;浏览量：980次</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="aicn">
+                    <div class="newlist">
+                        <ul>
+                            <a href="https://www.ibm.com/cn-zh/cloud/learn/what-is-artificial-intelligence"><img src="../images/人工智能.png" alt="人工智能" /></a>
+                            <p>人工智能应用？</p>
+                            <p>深度学习与机器学习？</p>
+                            <p style="color: #8C8C8C; font-size: 80%;">来自：&nbsp;&nbsp;发布时间 : 2020-06-03&nbsp;&nbsp;浏览量：2545次</p>
+                        </ul>
+                    </div>
+                </div>        
+            </div>
+            <h4>期待更多补充~ 😄</h4>
+        </div>
+        <div class="form">
+            <form action="" method="post">
+                <!-- fieldset元素将表单内的相关元素分组 -->
+                <fieldset>
+                    <!-- legend为 fieldset元素定义标题 -->
+                    <legend>Write to Me</legend>
+                    <!-- 表格布局 -->
+                    <div class="tableRow">
+                        <!-- 多选框 -->
+                        <label for="topics">
+                              话题：
+                        </label>
+                        <select id="topics" name="topics">
+                          <option value="大数据">大数据</option>
+                          <option value="云计算">云计算</option>
+                          <option value="物联网">物联网</option>
+                          <option value="区块链">区块链</option>
+                          <option value="人工智能">人工智能</option>
+                        </select>
+                    </div>
+                    <div class="tableRow">
+                        <!-- 复选框 -->
+                        <label>学习程度:</label>
+                        <p>
+                            <input type="checkbox" id="freshman" name="freshman" value="freshman"> 
+                                <label for="freshman">初学者</label><br>
+                            <input type="checkbox" id="adcancer" name="adcancer" value="adcancer" checked>
+                                <label for="adcancer">进阶者</label>
+                        </p>
+                    </div>
+                    <div class="tableRow">
+                        <label for="comments">评论:</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+                    <div class="tableRow">
+                        <input type="submit" value="Submit!">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Make friends with Me</legend>
+                    <div class="tableRow">
+                        <label for="name">姓名:</label>
+                        <input type="text" id="name" name="name" value="" placeholder="请输入你滴姓名o(*￣▽￣*)ブ" required> 
+                    </div>
+                    <div class="tableRow">
+                        <label for="Wechat">微信号:</label>
+                        <input type="text" id="Wechat" name="Wechat" value="" placeholder="请输入你滴微信o(*￣▽￣*)ブ" required> 
+                    </div>
+                    <div class="tableRow">
+                        <label for="your_email">邮箱:</label>
+                        <input type="email" id="your_email" name="your_email" value="" placeholder="请输入你滴邮箱o(*￣▽￣*)ブ" required> 
+                    </div>
+                    <div class="tableRow">
+                        <label for="phone">电话：</label>
+                        <input type="tel" id="phone" name="phone" value="" placeholder="请输入你滴电话o(*￣▽￣*)ブ" required>
+                    </div>
+                    <div class="tableRow">
+                        <label for="birthday">生日:</label>
+                        <input type="date" id="birthday" name="birthday" value="" placeholder="请输入你滴生日o(*￣▽￣*)ブ" required> 
+                    </div>
+                    <div class="tableRow">
+                        <input type="submit" value="Make Friends!">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>contact with Me</legend>
+                    <div class="tableRow">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                    <div class="tableRow">
+                        <img src="../images/myWechat.jpg" alt="" style="width:100px;">
+                        <img src="../images/myqq.jpg" alt=""style="width: 100px;">
+                    </div>
+                </fieldset>
+            </form>  
+        </div>
+        <!-- 表单区 -->
+    </section>
+    <footer class="footer">
+        <div class="footer_text">
+            <p class="copyright">Copyright&nbsp;&nbsp;&copy;永远向前进的诗韵~</p>
+        </div>
+    </footer>
+</body>
+</html>
