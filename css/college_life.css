@@ -18,7 +18,7 @@ header img{
 }
 .starset_1{
     position: absolute;
-    background-image: url(../images/star01.png);
+    background-image: url(./images/star01.png);
     left: 0;
     top: 0;
     height: 100%;
@@ -28,7 +28,7 @@ header img{
 }
 .starset_2{
     position: absolute;
-    background-image: url(../images/star02.png);
+    background-image: url(./images/star02.png);
     left: 0;
     top: 0;
     height: 100%;

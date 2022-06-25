@@ -14,7 +14,7 @@ html, body {
 }
 
 .sky .clouds_1 {
-  background: url("../images/cloud_one.png");
+  background: url("./images/cloud_one.png");
   position: absolute; /*采用绝对定位，“子绝父相”  */
   left: 0;
   top: 0;
@@ -25,7 +25,7 @@ html, body {
 }
 
 .sky .clouds_2 {
-  background: url("../images/cloud_two.png");
+  background: url("./images/cloud_two.png");
   position: absolute; /*采用绝对定位，“子绝父相”  */
   left: 0;
   top: 0;
@@ -36,7 +36,7 @@ html, body {
 }
 
 .sky .clouds_3 {
-  background: url("../images/cloud_three.png");
+  background: url("./images/cloud_three.png");
   position: absolute; /*采用绝对定位，“子绝父相”  */
   left: 0;
   top: 0;
